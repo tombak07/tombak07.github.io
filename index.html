@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analisis Risiko e-Klaim Tapera</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 20px; }
+    .dashboard { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    .card { background: #fff; border-radius: 16px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    .card h2 { font-size: 1.25rem; margin-bottom: 10px; }
+    .badge { display: inline-block; padding: 4px 10px; border-radius: 12px; font-size: 0.85rem; margin: 3px; }
+    .default { background: #d1fae5; color: #065f46; }
+    .secondary { background: #fef9c3; color: #92400e; }
+    .destructive { background: #fee2e2; color: #991b1b; }
+    ul { padding-left: 20px; }
+  </style>
+</head>
+<body>
+  <h1>📋 Analisis Risiko Aplikasi e-Klaim Tapera</h1>
+  <div class="dashboard">
+    <div class="card">
+      <h2>🧭 Alur e-Klaim Tapera</h2>
+      <p>
+        1. Registrasi & login di aplikasi Tapera.<br />
+        2. Lengkapi data pribadi dan pekerjaan.<br />
+        3. Upload dokumen klaim (SK Pensiun, Rekening).<br />
+        4. Verifikasi otomatis via Dukcapil/BKN/Bank.<br />
+        5. Dana dikembalikan maksimal 3 bulan.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>🔐 Data & Risiko</h2>
+      <ul>
+        <li>Data pribadi: KTP, KK, SK Pensiun</li>
+        <li>Data finansial: Nomor rekening, buku tabungan</li>
+        <li>Risiko: Kebocoran, kesalahan transfer, downtime</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🛡️ Keamanan & Regulasi</h2>
+      <p>
+        - Mengadopsi framework NIST dan hybrid cloud.<br />
+        - Patuh UU PDP 2022, UU Tapera (No. 4/2016), dan PP No. 1/2024.<br />
+        - Belum tersedia publikasi sertifikasi keamanan, SLA, atau audit.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>📊 Sentimen & Mitigasi</h2>
+      <div>
+        <span class="badge default">✅ Positif: Proses digital mempermudah</span>
+        <span class="badge secondary">⚠️ Netral: Proses 3 bulan dianggap lama</span>
+        <span class="badge destructive">🔒 Risiko: Transparansi keamanan terbatas</span>
+      </div>
+      <ul>
+        <li>Integrasi data untuk verifikasi cepat</li>
+        <li>Cloud hybrid = fleksibel & scalable</li>
+        <li>Butuh SLA & publikasi audit ke depan</li>
+      </ul>
+    </div>
+
+    <div class="card" style="grid-column: span 2;">
+      <h2>📌 Rekomendasi High-Level</h2>
+      <ul>
+        <li>Publikasi SLA dan kinerja sistem secara berkala</li>
+        <li>Audit keamanan eksternal (ISO27001, VAPT)</li>
+        <li>Dashboard uptime dan status pemulihan</li>
+        <li>Peningkatan edukasi publik soal keamanan & penipuan</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
